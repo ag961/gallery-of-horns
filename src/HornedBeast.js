@@ -43,7 +43,7 @@ class HornedBeast extends React.Component {
               src={this.props.imageUrl} 
               title={this.props.title}/>
             <Card.Title></Card.Title>
-            <Card.Text>{this.state.numberImageClicked} ❤️</Card.Text>
+            <Card.Text>{this.state.numberImageClicked ? this.state.numberImageClicked + ' ❤️' : ''}</Card.Text>
             <Card.Text onClick= {this.changeBackground}>{this.props.description}</Card.Text>
           </Card.Body>
         </Card>
