@@ -1,21 +1,5 @@
-* {
-  text-align: center; 
-  box-sizing: border-box;
-};
-
-body {
-  margin: 0 auto;
-}
-
-article {
-  border: 5px solid blue; 
-  width: max-content;
-  
-  margin: 1vw auto;
-}
-
-img {
-  max-width: 600px;
+h1 {
+  text-align: center;
 }
 
 
