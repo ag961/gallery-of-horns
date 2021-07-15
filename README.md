@@ -8,6 +8,8 @@ I built and app and describe the features that it accomplishes. I am including t
 
 ### Author: Ayrat Gimranov
 
+submission PR: https://github.com/ag961/gallery-of-horns/pull/2
+
 ### Feature #1: Display images
 
 > Given that a user opens the application in the browser, when the user navigates to the home page, then the photo gallery should display all of the images in the gallery
