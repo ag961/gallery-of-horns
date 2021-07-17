@@ -36,8 +36,7 @@ class HornedBeast extends React.Component {
         <Card className="text-center" bg={this.state.bgColor} text='white' border='light'>
           <Card.Body>
           <Card.Header onClick= {this.changeBackground} as="h2">{this.props.title}</Card.Header>
-            <Card.Img
-              variant="top"
+            <Card.Img              
               onClick = {this.addOne} 
               alt={this.props.alt} 
               src={this.props.imageUrl} 
