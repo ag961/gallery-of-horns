@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, CardColumns } from 'react-bootstrap';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 class HornedBeast extends React.Component {
 
@@ -15,7 +16,11 @@ class HornedBeast extends React.Component {
     this.setState({
       numberImageClicked: this.state.numberImageClicked + 1,
     })
+    
+  }
 
+  showModalHornedBeast = () => {
+    this.props.showModalPropMain(this.props.beast);
   }
 
   changeBackground = () => {
@@ -29,24 +34,24 @@ class HornedBeast extends React.Component {
       })
     }
   }
-
+  
   render(){
-    return(
-      <CardColumns>
-        <Card className="text-center" bg={this.state.bgColor} text='white' border='light'>
-          <Card.Body>
-          <Card.Header onClick= {this.changeBackground} as="h2">{this.props.title}</Card.Header>
-            <Card.Img              
-              onClick = {this.addOne} 
-              alt={this.props.alt} 
-              src={this.props.imageUrl} 
-              title={this.props.title}/>
-            <Card.Title></Card.Title>
-            <Card.Text>{this.state.numberImageClicked ? this.state.numberImageClicked + ' ❤️' : ''}</Card.Text>
-            <Card.Text onClick= {this.changeBackground}>{this.props.description}</Card.Text>
-          </Card.Body>
-        </Card>
-      </CardColumns>
+    
+    return(      
+      <Card className="text-center" bg={this.state.bgColor} text='white' border='light'>
+        <Card.Body>
+        <Card.Header onClick= {this.changeBackground} as="h2">{this.props.beast.title}</Card.Header>
+          <Card.Img              
+            onClick={this.showModalHornedBeast} 
+            alt={this.props.beast.alt} 
+            src={this.props.beast.image_url} 
+            title={this.props.beast.title}/>
+          <Card.Title></Card.Title>
+          <Card.Text>{this.state.numberImageClicked ? this.state.numberImageClicked + ' ❤️' : ''}</Card.Text>
+          <Button onClick={this.addOne} variant="danger">Like</Button>
+          <Card.Text onClick= {this.changeBackground}>{this.props.beast.description}</Card.Text>
+        </Card.Body>
+      </Card>      
     )
   }
 }
