@@ -8,51 +8,18 @@ I built and app and describe the features that it accomplishes. I am including t
 
 ### Author: Ayrat Gimranov
 
-submission PR: https://github.com/ag961/gallery-of-horns/pull/2
+submission PR: https://github.com/ag961/gallery-of-horns/pull/8
 
-### Feature #1: Display images
+### Feature #1: Display a Modal
 
-> Given that a user opens the application in the browser, when the user navigates to the home page, then the photo gallery should display all of the images in the gallery
+> Given that a user wants to view the details of the image
+When the user clicks on an individual image
+Then the image should render larger on the screen with the description displayed
 
-Estimate of time needed to complete: 4 hours
+Estimate of time needed to complete: 3 hrs
 
-Start time: 9.30 pm
+Start time: 12 am
 
-Finish time: 11.40 pm
+Finish time: 6 am
 
-Actual time needed to complete: 2 hrs 10 mins
-
-### Feature #2: Allow users to vote for their favorite beast
-
-> Given that a user clicks on an image, the number of “favorites” displayed on that image will increase by one.
-
-Estimate of time needed to complete: 2 hours
-
-Start time: 11.55 pm
-
-Finish time: 1.23 am
-
-Actual time needed to complete: 1.5 hours
-
-### Feature 3: Bootstrap
-
-> Given that a user opens the application in the browser
-When the images are displayed on the screen
-Then each image should be rendered in a visually pleasing way
-The images should be displayed in columns, as screen width allows
-
-Estimate of time needed to complete: 2 hours
-
-Start time: 1.30 am
-
-Finish time: 2.50 am
-
-Actual time needed to complete: 1 hr 20 mins
-
-### Stretch Goal: Add Interaction
-
-> Given that a user clicks on an item other than the horned beasts, such as the title of the page or the footer, the information and styles should change.
-
-Actual time needed to complete: 40 mins
-
-Added Interaction: When a user clicks on on the title or the description of the horned beast, the background color of that beast card will change from green to blue and vice versa.
+Actual time needed to complete: 6 hrs
