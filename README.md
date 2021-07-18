@@ -8,6 +8,8 @@ I built and app and describe the features that it accomplishes. I am including t
 
 ### Author: Ayrat Gimranov
 
+date 7/17/2021
+
 submission PR: https://github.com/ag961/gallery-of-horns/pull/8
 
 ### Feature #1: Display a Modal
