@@ -1,23 +1,23 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
-import data from './data.json';
+import CardColumns from 'react-bootstrap/CardColumns';
 
 class Main extends React.Component {
-  render(){
-    let beastArr = [];
-    data.forEach((beast, index) => {
-      beastArr.push(
-        <HornedBeast
-          key = {index}
-          title ={beast.title}
-          imageUrl = {beast.image_url}
-          description = {beast.description} 
-        />
-      )
-    })    
+
+  render(){    
+    let beastArr = this.props.data.map((beast, index) => (
+      <HornedBeast
+        key={index}        
+        showModalPropMain={this.props.showModalPropApp}
+        beast={beast}
+      />)
+      )    
+      
     return(
     <main>
-      {beastArr}      
+      <CardColumns>
+        {beastArr}    
+      </CardColumns>
     </main>
     )
   }
