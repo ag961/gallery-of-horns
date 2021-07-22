@@ -7,16 +7,16 @@ import data from './data.json';
 import SelectedBeast from './SelectedBeast';
 
 
+
 class App extends React.Component {
   constructor (props){
     super(props);
     this.state = {
       modalVisible: false,
       beast: {},
-      
     }
   }
-
+  
   showModalApp = (beast) => {
     this.setState({
       modalVisible: true,
@@ -30,10 +30,11 @@ class App extends React.Component {
     })
   }
 
-  render(){
+  render() {
     return(
       <>
         <Header />
+        
         <SelectedBeast 
           modalVisible={this.state.modalVisible}
           beast={this.state.beast}
@@ -41,6 +42,7 @@ class App extends React.Component {
         <Main 
           showModalPropApp={this.showModalApp}
           data={data}
+          
         />
         <Footer />
       </>
