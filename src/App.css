@@ -2,5 +2,18 @@ h1 {
   text-align: center;
 }
 
+form {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem;
+}
 
+.col-auto {
+  background-color: blanchedalmond;
+  border-radius: 0.3rem;
+  border: solid
+}
 
+.custom-select {
+  margin-bottom: 1rem;
+}
